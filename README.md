@@ -29,13 +29,13 @@ And then start up a local development server:
 You can package the function into a slim container and run it from there. I pre-built a container version from the [Dockerfile](Dockerfile) inside this repository.
 
 ```bash
-  docker run -ti --rm --port 8080:8080 torbendury/qr-barcode-generator:0.0.2
+  docker run -ti --rm --port 8080:8080 torbendury/qr-barcode-generator:latest
 ```
 
 If you would like to build the container yourself, enter the following command into your terminal:
 
 ```bash
-  docker build -t torbendury/qr-barcode-generator:0.0.2-snapshot
+  docker build -t torbendury/qr-barcode-generator:latest
 ```
 
 ## Security
