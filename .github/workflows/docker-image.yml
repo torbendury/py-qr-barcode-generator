@@ -15,7 +15,7 @@ jobs:
     steps:
       - id: pre-step
         shell: bash
-        run: echo "release_tag=$(date +%d-%m-%Y-%s)"
+        run: echo "release_tag=$(date +%d-%m-%Y-%s)" >> $GITHUB_OUTPUT
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
       - name: Login to Docker Hub
