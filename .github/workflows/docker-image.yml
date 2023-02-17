@@ -15,7 +15,7 @@ jobs:
     steps:
       - id: pre-step
         shell: bash
-        run: echo "release_tag=$(date +%s)"
+        run: echo "release_tag=$(date +%d-%m-%Y-%s)"
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
       - name: Login to Docker Hub
@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: torbendury/qr-barcode-generator:${{ steps.pre-step.outputs.release-version }},torbendury/qr-barcode-generator:latest
+          tags: torbendury/qr-barcode-generator:${{ steps.pre-step.outputs.release_tag }},torbendury/qr-barcode-generator:latest
