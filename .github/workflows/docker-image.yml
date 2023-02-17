@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: torbendury/qr-barcode-generator:{{ steps.pre-step.outputs.release-version }},torbendury/qr-barcode-generator:latest
+          tags: torbendury/qr-barcode-generator:${{ steps.pre-step.outputs.release-version }},torbendury/qr-barcode-generator:latest
