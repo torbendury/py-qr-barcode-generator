@@ -1,5 +1,7 @@
 # QR and CODE128 generator
 
+[![Docker Image CI](https://github.com/torbendury/py-qr-barcode-generator/actions/workflows/docker-image.yml/badge.svg)](https://github.com/torbendury/py-qr-barcode-generator/actions/workflows/docker-image.yml)
+
 This Python 3.11. function is intended to create QR codes as well as CODE128 barcodes as PNG files.
 
 It runs as a serverless function and is built upon Googles' `function-framework`.
